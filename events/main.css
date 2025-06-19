@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    margin: 20px;
+}
+
+#header>h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Noto Nastaliq Urdu", serif;
+
+    color: #df4875d6;
+}
+
+h2 {
+    color: #df4875d6;
+    font-family: "Noto Nastaliq Urdu", serif;
+
+
+}
+
+#header>p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 60px;
+}
+
+.card>div {
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+    width: 400px;
+    height: 250px;
+}
+
+.card-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.card-text {
+    margin: -30px auto;
+    margin-bottom: -50px;
+    height: 300px;
+    width: 300px;
+    background-color: #1D1C20;
+    color: #fff;
+    padding: 20px;
+}
+
+.card-meal-type {
+    font-style: italic;
+}
+
+.card-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.card-body {
+    font-size: 1.25rem;
+}
+
+.card-price {
+    width: 100px;
+    height: 100px;
+    background-color:#df4875d6;
+    color: #fff;
+    margin-left: auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    background-color: #df4875d6;
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    font-size: 1.7rem;
+    border: transparent;
+}
+
+.btn::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    z-index: -10;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #df4875d6;
+    box-shadow: 0px 15px 20px #df4875d6;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 3rem 4%;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-bar {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: .1rem solid #000;
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.nav-toggle {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        padding: 1rem;
+        background-color: #000;
+        text-align: center;
+        border-radius: .5rem;
+        color: #fff;
+        transition: .5s;
+    }
+
+    header .navbar a:hover {
+        background-color: var(--main-color);
+        color: #fff;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .home .content h3 {
+        font-size: 3rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+
+    .about .buttons a {
+        width: 95%;
+        text-align: center;
+    }
+
+    .about .buttons a:last-child {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width:400px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+    }
+}
