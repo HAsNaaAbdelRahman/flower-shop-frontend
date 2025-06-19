@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    }
+    
+    .container {
+    width: 90%;
+    margin: auto;
+    }
+    
+    .maindiv {
+    text-align: center;
+    color:  #df4875d6;
+    font-size:60px;
+    font-family: "Urdu typesetting";
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    height: 100px;
+    }
+    
+    .mainhr {
+    width: 50px;
+    border: none;
+    border-top: 2px solid rgba(33, 30, 30, 0.764);
+    font-weight: bold;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.745);
+    }
+    
+    #section1 {
+    margin-top: 50px;
+    width: 90%;
+    height: 95%;
+    clear: both;
+    color: white;
+    border: 1px solid #ccc;
+    box-shadow:1px 2px 3px 2px #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .project {
+    margin: 1%;
+    width: calc(25% - 2%);
+    transition: all 0.3s linear;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 1px 3px 1px rgba(32, 31, 17, 0.368);
+    }
+    
+    .project img {
+    width: 95%;
+    height: 380px;
+    border-radius: 15px;
+    margin: 8px auto;
+    margin-left:8px;
+    }
+    
+    .project:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color:  #edc5d159;
+    
+    }
+    
+    .puydiv {
+    width: 65px;
+    height: 18px;
+    text-align: center;
+    background-color:  #df4875d6;
+    color: #fff;
+    padding: 10px 13px;
+    border-radius: 25px;
+    margin: 15px auto;
+    /* margin-bottom:5px; */
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.414);
+    
+    }
+    a{
+    text-decoration: none;
+    color: white;
+    }
+    
+    .txt-star {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    }
+    
+    .fa-star {
+    color: orange;
+    width: 18px;
+    height: 27px;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .project {
+    width: calc(50% - 2%);
+    }
+  }
