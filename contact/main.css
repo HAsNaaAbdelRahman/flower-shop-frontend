@@ -1,0 +1,191 @@
+.title {
+  text-align: center;
+  color: #df4875d6;
+  font-size: 60px;
+  font-family: "Urdu typesetting";
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  height: 100px;
+}
+
+.mainhr {
+  width: 50px;
+  border: none;
+  border-top: 2px solid rgba(33, 30, 30, 0.764);
+  font-weight: bold;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.745);
+}
+
+.main-div {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 25%;
+  background: url("../الصور/hero-bg.png");
+  background-size: cover;
+  font-family: "Urdu typesetting";
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 3px 2px #ccc;
+}
+
+.form-div {
+  position: absolute;
+  left: 100px;
+  width: 11px;
+  height: 25px;
+
+}
+
+form input {
+  border-radius: 3px;
+  border: transparent;
+}
+
+form label {
+  color: #df4875d6;
+  font-size: 20px;
+}
+
+.txt-div {
+  float: right;
+  margin-right: 70px;
+  font-size: 40px;
+  color: #df4875d6;
+
+}
+#nm , #num , #em :focus{
+  outline: none;
+  border-color:  #df4875d6;
+}
+
+#nm , #num ,#em {
+  height: 25px;
+}
+.btn {
+  width: 100px;
+  border: none;
+  color: #df4875d6;
+  background-color: #fcfcfcd6;
+  top:70px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  background-color: #df4875d6;
+  color: white;
+
+}
+
+
+/* Footer styles */
+.footer {
+  background-color: #000000df;
+  padding: 20px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-text {
+  color: white;
+  font-family: Urdu Typesetting;
+  font-weight: 30px;
+  font-size: large;
+
+}
+
+.contactWithus {
+  color: white;
+  font-family: Urdu Typesetting;
+
+
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.footer-logo img {
+  height: 35px;
+  position: absolute;
+  top: 25px;
+
+}
+
+
+
+
+
+.footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.footer-social ul li a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.footer-social ul li a:hover {
+
+  color: #b856a4;
+  font-size: 18px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  color: #999999;
+  font-size: 16px;
+}
+
+.footer-bottom p:hover {
+  color: #b856a4;
+  font-size: 16px;
+}
+
+.triangle1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #ffffff;
+  top: -50px;
+  left: 130px;
+
+
+}
+
+
+
+.triangle2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #ffffff;
+  top: -50px;
+  right: 130px;
+
+}
